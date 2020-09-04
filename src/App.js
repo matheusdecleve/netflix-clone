@@ -1,11 +1,13 @@
 import React from "react";
 import requests from "./requests";
+import Navbar from './components/Navbar';
 import Banner from "./components/Banner";
 import Row from "./components/Row";
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Banner />
       <Row
         isLargeRow

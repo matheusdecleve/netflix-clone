@@ -1,5 +1,5 @@
 .banner {
-  height: 450px;
+  height: 500px;
   object-fit: center;
   background-size: cover;
   background-position: center center;
@@ -19,5 +19,15 @@
       line-height: 1.3;
       padding-top: 1rem;
     }
+  }
+
+  &--fadeBanner {
+    height:12rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37,37,37,0.61),
+      #111
+    );
   }
 }
