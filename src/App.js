@@ -1,10 +1,12 @@
 import React from "react";
 import requests from "./requests";
+import Banner from "./components/Banner";
 import Row from "./components/Row";
 
 function App() {
   return (
     <div className="App">
+      <Banner />
       <Row
         isLargeRow
         fetchUrl={requests.fetchNetflixOriginals}
