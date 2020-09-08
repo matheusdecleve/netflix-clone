@@ -14,7 +14,3 @@ Install node-sass to preprocessor css (npm install node-sass)
 Install firebase-tools (npm install -g firebase-tools)
 
 Install axios (npm install axios)
-
-Install react-youtube (npm install react-youtube)
-
-Install movie-trailer (npm install movie-trailer)
