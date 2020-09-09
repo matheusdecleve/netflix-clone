@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { FaPlay, FaInfoCircle } from "react-icons/fa";
+
 import axios from "../../axios";
 import requests from "../../requests";
 
@@ -31,13 +33,17 @@ function Banner() {
     >
       <div className="banner__content">
         <h2>{movie?.title || movie?.name || movie?.original_name}</h2>
+        <p>{truncate(movie?.overview, 140)}</p>
         <div className="banner__buttons">
-          <button className="banner__button">Play</button>
-          <button className="banner__button">My List</button>
+          <button>
+            <FaPlay /> Assistir
+          </button>
+          <button>
+            <FaInfoCircle /> Mais informações
+          </button>
         </div>
-        <p>{truncate(movie?.overview, 200)}</p>
       </div>
-      <div className="banner--fadeBanner"></div>
+      {/* <div className="banner--overlay"></div> */}
     </header>
   );
 }
