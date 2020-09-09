@@ -21,7 +21,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={`navbar ${show && "navbar__show"}`}>
+    <div className={`navbar ${show ? "navbar__show" : ""}`}>
       <div className="navbar__left">
         <img src={logo} alt="Logo Netflix Clone" title="Netflix Clone" />
         <nav>
