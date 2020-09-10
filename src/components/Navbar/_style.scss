@@ -57,10 +57,42 @@
     align-content: center;
     align-items: center;
 
-    a {
+    a,
+    button {
       color: white;
       margin: 0 16px;
       font-size: 21px;
+      transition: 0.5s;
+    }
+
+    form {
+      input[type="text"] {
+        background: #111;
+        border: solid 1px white;
+        color: #ccc;
+        padding: 10px 25px 8px 40px;
+        border-radius: 0;
+        font-size: 1rem;
+        outline: 0;
+      }
+    }
+    button {
+      background: transparent;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
     }
   }
+}
+
+.searchOpen {
+  display: block;
+}
+.searchClose {
+  display: none;
+}
+
+.lupaOn {
+  margin-right: -30px !important;
+  z-index: 9;
 }
