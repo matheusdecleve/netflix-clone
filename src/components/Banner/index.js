@@ -31,19 +31,20 @@ function Banner() {
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
       }}
     >
-      <div className="banner__content">
-        <h2>{movie?.title || movie?.name || movie?.original_name}</h2>
-        <p>{truncate(movie?.overview, 140)}</p>
-        <div className="banner__buttons">
-          <button>
-            <FaPlay /> Assistir
-          </button>
-          <button>
-            <FaInfoCircle /> Mais informações
-          </button>
+      <div className="overlay">
+        <div className="banner__content">
+          <h2>{movie?.title || movie?.name || movie?.original_name}</h2>
+          <p>{truncate(movie?.overview, 140)}</p>
+          <div className="banner__buttons">
+            <button>
+              <FaPlay /> Assistir
+            </button>
+            <button>
+              <FaInfoCircle /> Mais informações
+            </button>
+          </div>
         </div>
       </div>
-      {/* <div className="banner--overlay"></div> */}
     </header>
   );
 }
