@@ -26,12 +26,12 @@ function App() {
           fetchUrl={requests.fetchTopRated}
           title="Top Rated"
         ></Row>
-        <Row fetchUrl={requests.fetchComedyMovies} title="Comedy Movies"></Row>
-        <Row fetchUrl={requests.fetchHorrorMovies} title="Horror Movies"></Row>
+        <Row fetchUrl={requests.fetchComedyMovies} title="Comédia"></Row>
         <Row
-          fetchUrl={requests.fetchRomanceMovies}
-          title="Romance Movies"
+          fetchUrl={requests.fetchHorrorMovies}
+          title="Filmes de terror"
         ></Row>
+        <Row fetchUrl={requests.fetchRomanceMovies} title="Romance"></Row>
       </>
       <Footer />
     </>
