@@ -12,6 +12,10 @@
   z-index: 99;
   transition: 450ms;
 
+  a {
+    @include text-shadow;
+  }
+
   &__show {
     background: rgb(20, 20, 20);
   }
@@ -28,12 +32,12 @@
     nav {
       display: flex;
       align-items: center;
-      margin-left: 40px;
+      margin-left: 30px;
 
       a {
         color: #e5e5e5;
-        margin: 0 10px;
-        font-size: 14px;
+        margin: 0 12px;
+        font-size: 15px;
         transition: 0.4s;
 
         &:hover {

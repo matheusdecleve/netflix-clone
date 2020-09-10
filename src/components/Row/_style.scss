@@ -1,6 +1,17 @@
 .row {
   width: 100%;
-  margin-left: 20px;
+  margin-left: 4%;
+  margin-top: 20px;
+
+  h3 {
+    font-size: 19px;
+    color: #e5e5e5;
+    margin-bottom: 10px;
+  }
+
+  &__first {
+    margin-top: -80px;
+  }
 
   &__movies {
     display: flex;
@@ -12,9 +23,10 @@
     }
 
     &__poster {
-      max-height: 120px;
-      margin-right: 10px;
+      width: 244px;
+      max-height: 137px;
       padding: 5px;
+      border-radius: 8px;
       object-fit: contain;
       transition: transform 450ms;
 
@@ -24,7 +36,7 @@
     }
 
     &__posterLarge {
-      max-height: 350px;
+      max-height: 400px;
 
       &:hover {
         transform: scale(1.09);

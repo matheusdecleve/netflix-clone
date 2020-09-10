@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.App {
+.root {
   width: 100%;
 }
 
@@ -29,6 +29,11 @@ a {
   text-decoration: none;
 }
 
+@mixin text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+}
+
 @import "./components/Navbar/style";
 @import "./components/Row/style";
 @import "./components/Banner/style";
+@import "./components/Footer/style";
