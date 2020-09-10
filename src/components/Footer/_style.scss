@@ -1,0 +1,46 @@
+.footer {
+  max-width: 980px;
+  margin: 120px auto 0;
+
+  &__social {
+    display: flex;
+    margin-bottom: 20px;
+
+    a {
+      font-size: 2rem;
+      color: grey;
+      margin-right: 18px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-arround;
+    align-content: center;
+
+    div {
+      width: 25%;
+      padding: 0 40px 0 0;
+
+      a {
+        display: block;
+        font-size: 13px;
+        margin-bottom: 16px;
+        color: grey;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__copy {
+    margin: 20px 0;
+    font-size: 0.8rem;
+    color: grey;
+    a {
+      color: white;
+    }
+  }
+}
